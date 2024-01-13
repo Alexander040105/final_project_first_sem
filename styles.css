@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;700&display=swap');
+
+body{
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D0D;
+    color: #F20505;    
+}
+
+.brand-title .perpetual{
+    max-width: 280px;
+    max-height: 68px;
+    cursor: pointer;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*Styles of the list*/
+.navbar-links li{
+    list-style: none;
+}
+
+/*Styles of the link*/
+.navbar-links li a{
+    text-decoration: none;
+    color: #F2F2F2;
+    padding: 2rem;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-links li a:hover{
+    background: #F2F2F2;
+    color:#F20505;
+}
+
+/* landing page styling */
+#home{
+    margin: 0;
+    padding: 0;
+    /* background-color: #0D0D0D; */
+    background: linear-gradient(to right, #F20505, #0D0D0D);
+    /* background: linear-gradient(to right, #0D0D0D, #F20505); */
+}
+
+.landing-contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home img{
+    height: 40rem;
+    width: 40rem;
+}
+
+#home h1{
+    /* width: 80%; */
+    text-align: left;
+}
+
+.h1s{
+    line-height: 4rem;
+    width: 35%;
+}
+
+#app-dev{
+    margin-top: -2.5rem;
+    color: #F20505;
+    background-color: #F2F2F2;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+#my-name{
+    color: #F2F2F2;
+    line-height: 5rem;
+    font-size: 4rem;
+    padding-left: 1rem;
+}
+
+
+/* about me stylings */
+
+.descrips, .merryhills, .uphsd, .adobe,  .prog, .skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.descrips, .acad-background{
+    height: 30rem;
+}
+
+.skills{
+    height: 60rem;
+}
+
+.descrip{
+    width: 70%;
+    text-align: center;
+}
+
+.descrips p{
+    width: 70%;
+    text-align: center;
+}
+
+#js{
+    height: 5.75rem;
+    width: 5.75rem;
+}
+
+.schools{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.acad-background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+}
+
+.uphsd p, .merryhills p{
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#uphsd-logo{
+    height: 10rem;
+    width: 7rem;
+}
+
+#merryhills-logo{
+    height: 10rem;
+    width: 10rem;
+}
+
+
+.logo-adobe img, .logo-prog img{
+    height: 5rem;
+    width: 5rem;
+    margin: 1.25rem;
+}
+
+.experience{
+    height: 100rem;
+    /* color: #F2F2F2;
+    background-color: #0D0D0D; */
+}
