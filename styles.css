@@ -65,7 +65,7 @@ h1{
     margin: 0;
     padding: 0;
     /* background-color: #0D0D0D; */
-    background: linear-gradient(to right, #F20505, #0D0D0D);
+    background: linear-gradient(to right,#F20505, #0D0D0D);
     /* background: linear-gradient(to right, #0D0D0D, #F20505); */
 }
 
@@ -149,6 +149,7 @@ h1{
     align-items: center;
     justify-content: center;
     background-color: #0D0D0D;
+    /* background: linear-gradient(to right, #F20505, #0D0D0D); */
     color: #F2F2F2;
 }
 
@@ -176,7 +177,51 @@ h1{
 }
 
 .experience{
-    height: 100rem;
+    height: 45rem;
+    background-color: #0D0D0D;
+    color: #0D0D0D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* color: #F2F2F2;
     background-color: #0D0D0D; */
+}
+
+#exp-header{
+    color: #F2F2F2;
+}
+
+.contents{
+    width: 95%;
+}
+
+#tsp-logo, #rez-logo, #jon-logo{
+    width: 10rem;
+    height: 10rem;
+}
+
+#hhr-logo{
+    width: 16rem;
+    height: 8rem;
+}
+
+#hpb-logo{
+    width: 18rem;
+    height: 8rem;
+}
+
+.exp-container{
+    border-radius: 50px;
+}
+
+.header-exp, .descrip-exp, .exp-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descrip-exp ul li{
+    width: 95%;
+    text-align: left;
 }
