@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+}
+
 body{
     background-color: #F2F2F2;
     color: #0D0D0D;
@@ -20,6 +25,9 @@ h1{
 }
 
 .navbar {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,19 +65,22 @@ h1{
 
 .navbar-links li a:hover{
     background: #F2F2F2;
-    color:#F20505;
+    color:#0D0D0D;
 }
 
 /* landing page styling */
 #home{
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    height: 45rem;
     /* background-color: #0D0D0D; */
     background: linear-gradient(to right,#F20505, #0D0D0D);
     /* background: linear-gradient(to right, #0D0D0D, #F20505); */
 }
 
 .landing-contents{
+    position: relative;
+    top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,12 +101,14 @@ h1{
     width: 35%;
 }
 
+
 #app-dev{
     margin-top: -2.5rem;
     color: #F20505;
     background-color: #F2F2F2;
     padding-left: 1rem;
     font-size: 1.5rem;
+    text-shadow: 2px 2px 10px 2px rgba(0, 0, 0, .5);
 }
 
 #my-name{
@@ -103,6 +116,7 @@ h1{
     line-height: 5rem;
     font-size: 4rem;
     padding-left: 1rem;
+    text-shadow: 2px 2px 10px 2px rgba(0, 0, 0, .5);
 }
 
 
@@ -116,11 +130,11 @@ h1{
 }
 
 .descrips, .acad-background{
-    height: 30rem;
+    height: 35rem;
 }
 
 .skills{
-    height: 60rem;
+    height: 65rem;
 }
 
 .descrip{
@@ -177,12 +191,13 @@ h1{
 }
 
 .experience{
-    height: 45rem;
+    height: 50rem;
     background-color: #0D0D0D;
     color: #0D0D0D;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     /* color: #F2F2F2;
     background-color: #0D0D0D; */
 }
@@ -212,7 +227,10 @@ h1{
 
 .exp-container{
     border-radius: 50px;
+    box-shadow: 2px 2px 10px 2px rgba(242, 242, 242, 0.5);
 }
+
+
 
 .header-exp, .descrip-exp, .exp-container{
     display: flex;
@@ -224,4 +242,155 @@ h1{
 .descrip-exp ul li{
     width: 95%;
     text-align: left;
+}
+
+
+.projects{
+    height: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.compilation-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangles,.images-rectangle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.images-rectangle img{
+    width: 32rem;
+    height: 15rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.images-squares img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20px;
+}
+
+.images-squares{
+    position: relative;
+    top: -1rem;
+    margin: 2rem;
+    /* margin-left: 3.5rem;
+    margin-bottom: 1rem; */
+}
+
+.images-rectangle h2, .images-squares h2{
+    color: #0D0D0D;
+    text-align: center;
+}
+
+.images-rectangle a, .images-squares a{
+    text-decoration:none;
+}
+
+.compilation-projects h2{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.images-rectangle img, .images-squares img{
+    opacity: 85%;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, .5);
+}
+
+.images-rectangle img:hover, .images-squares img:hover{
+    opacity: 100%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.images-rectangle:hover, .images-squares:hover{
+    scale: 1.2;
+}
+
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    height: 70rem;
+    row-gap: 3rem;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px 2px rgba(242, 242, 242, 0.455);
+    width: 45rem;
+    height: 40rem;
+}
+
+
+.contact-container p{
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
+}
+
+.contact-container h1{
+    /* margin-top: 8rem; */
+    font-size: 2.5rem;
+}
+
+.photo{
+    position: relative;
+    top: -2rem;
+    border: 5px #F2F2F2;
+}
+
+.photo img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contacts img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.contacts h2{
+    font-size: 1rem;
+}
+
+.fb, .gmail, .linkedin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 15px;
+    gap: 1rem;
+}
+
+.contacts a{
+    text-decoration: none;
+    color: #0D0D0D;
+}
+
+
+
+.contacts a:hover{
+    text-decoration: underline;
 }
