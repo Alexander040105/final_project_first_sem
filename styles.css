@@ -151,6 +151,12 @@ h1{
     height: 5.75rem;
     width: 5.75rem;
 }
+.logo-prog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .schools{
     display: flex;

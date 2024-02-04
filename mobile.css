@@ -1,0 +1,97 @@
+@media screen and (max-width: 768px) {
+    #home img{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    p{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+
+    .navbar{
+        height: 2.5rem;
+    }
+
+    .navbar-links li a{
+        justify-content: center;
+        font-size: 10px;
+        padding: .5rem;
+    }
+
+    .landing-contents{
+        flex-direction: column;
+    }
+
+    #home{
+        height: 40rem;
+    }
+
+    .h1s{
+        width: 85%;
+        line-height: 4rem;
+    }
+    
+    #my-name, #app-dev{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    #my-name{
+        font-size: 2rem;
+    }
+
+    #app-dev{
+        margin-top: .5rem;
+    }
+
+    .about-me .descrips{
+        height: 45rem;
+    }
+
+
+    .acad-background{
+        height: 40rem;
+    }
+
+    .schools{
+        flex-direction: column;
+    }
+
+    #uphsd-logo{
+        height: 8rem;
+        width: 5rem;
+    }
+    
+    #merryhills-logo{
+        height: 8rem;
+        width: 8rem;
+    }
+
+
+    .logo-adobe img, .logo-prog img{
+        height: 3rem;
+        width: 3rem;
+        margin: 1rem;
+    }
+
+    #js{
+        height: 3.75rem;
+        width: 3.75rem;
+    }
+
+    .logo-prog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills{
+        height: 90rem;
+    }
+}
